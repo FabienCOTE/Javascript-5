@@ -1,6 +1,6 @@
 var languagesArrayCreation = function () {
 
-  return languages =  ["Html", "CSS", "Java", "PHP"];
+  return languages = ["Html", "CSS", "Java", "PHP"];
 }
 
 var numbersArrayCreation = function () {
@@ -9,7 +9,7 @@ var numbersArrayCreation = function () {
 }
 
 var ElementReplacement = function (languages) {
-  languages.splice(2, 1, "Javascript");
+  languages[2]="Javascript";
   return languages;
 }
 
@@ -19,28 +19,28 @@ var AddElementToLanguagesArray = function (languages) {
 }
 
 var AddElementToNumbersArray = function (numbers) {
-  numbers.splice(0, 0, -2, -1);
+  numbers.unshift(-2, -1);
   return numbers;
 }
 
 var deleteArrayFirstElement = function (languages) {
-
-  return languages.slice(1);
+  languages.shift();
+  return languages;
 }
 
 var deleteArrayLastElement = function (languages) {
-
-  return languages.slice(0,4);
+  languages.pop();
+  return languages;
 }
 
 var stringToArray = function (socialMediaInString) {
-
-  return socialMediaString = socialMedia = ['Facebook', 'Twitter', 'Google +', 'Viadeo', 'LinkedIn'];
+  var socialMedia=socialMediaInString.split(",");
+  return socialMedia;
 }
 
 var arrayToString = function (languages) {
 
-  return languages = languagesInString = 'CSS,Javascript,PHP,Ruby';
+  return languages.toString();
 }
 
 var arraySort = function (socialMedia) {
